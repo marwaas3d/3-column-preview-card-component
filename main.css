@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--Very-light-gray);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 54rem;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/***********************************/
+h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    color: var(--Very-light-gray);
+    text-transform: uppercase;
+}
+p{
+    font-family: "Work Sans", serif;
+    font-weight: 400;
+    color: var(--Transparent-white);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.btn{
+    font-family: "Work Sans", serif;
+    width: 134px;
+    height: 44px;
+    border-radius: 31px;
+    background-color: var(--Very-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+/***********************************/
+.first .btn ,p , h1 , img{
+    margin-left: 40px;
+}
+.second .btn ,p , h1 , img{
+    margin-left: 40px;
+}
+.third .btn ,p , h1 , img{
+    margin-left: 40px;
+}
+/***********************************/
+.first{
+    grid-column: 1/2;
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1.5fr;
+}
+.first img,
+.second img,
+.third img{
+    margin-top: 30px;
+    transform: scale(.8);
+}
+.first h1,
+.second h1,
+.third h1{
+    margin-top: 20px;
+}
+.first p,
+.second p,
+.third p{
+    margin-top: 10px;
+}
+
+.first .btn,
+.second .btn,
+.third .btn{
+    margin-top: 35px;
+}
+/******************************/
+.second{
+    grid-column: 2/3;
+    background-color: var(--Dark-cyan);
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1.5fr;
+}
+
+.third{
+    grid-column: 3/4;
+    background-color: var(--Very-dark-cyan);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1.5fr;
+}
+/******************************/
+.first .btn{
+    color: var(--Bright-orange);
+    cursor: pointer;
+}
+.first .btn:hover{
+    color: var(--Very-light-gray);
+    background-color: transparent;
+    border: 1px solid var(--Very-light-gray);
+}
+
+
+.second .btn{
+    color: var(--Dark-cyan);
+    cursor: pointer;
+}
+.second .btn:hover{
+    color: var(--Very-light-gray);
+    background-color: transparent;
+    border: 1px solid var(--Very-light-gray);
+}
+
+
+.third .btn{
+    color: var(--Very-dark-cyan);
+    cursor: pointer;
+}
+.third .btn:hover{
+    color: var(--Very-light-gray);
+    background-color: transparent;
+    border: 1px solid var(--Very-light-gray);
+}
+
+/*********************************/
+
+.first p{
+    width: 198px;
+}
+.second p{
+    width: 210px;
+}
+.third p{
+    width: 221px;
+}
+
+
+
+@media (max-width: 375px){
+    body {
+        background-color: var(--Very-light-gray);
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 164vh;
+    }
+
+    .container {
+        width: 54rem;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    
+    /***********************************/
+h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    color: var(--Very-light-gray);
+    text-transform: uppercase;
+}
+p{
+    font-family: "Work Sans", serif;
+    font-weight: 400;
+    color: var(--Transparent-white);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.btn{
+    font-family: "Work Sans", serif;
+    width: 134px;
+    height: 44px;
+    border-radius: 31px;
+    background-color: var(--Very-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+/***********************************/
+.first .btn ,p , h1 , img{
+    margin-left: 40px;
+}
+.second .btn ,p , h1 , img{
+    margin-left: 40px;
+}
+.third .btn ,p , h1 , img{
+    margin-left: 40px;
+}
+/***********************************/
+.first{
+    grid-row: 1/2;
+    grid-column: 1/1;
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1.5fr;
+}
+.first img,
+.second img,
+.third img{
+    margin-top: 30px;
+    transform: scale(.8);
+}
+.first h1,
+.second h1,
+.third h1{
+    margin-top: 20px;
+}
+.first p,
+.second p,
+.third p{
+    margin-top: 10px;
+}
+
+.first .btn,
+.second .btn,
+.third .btn{
+    margin-top: 35px;
+}
+
+.second{
+    grid-row: 2/3;
+    grid-column: 1/1;
+    background-color: var(--Dark-cyan);
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1.5fr;
+}
+
+/******************************/
+.third{
+    grid-row: 3/4;
+    grid-column: 1/1;
+    background-color: var(--Very-dark-cyan);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1.5fr;
+}
+/******************************/
+.first .btn{
+    color: var(--Bright-orange);
+    cursor: pointer;
+}
+.first .btn:hover{
+    color: var(--Very-light-gray);
+    background-color: transparent;
+    border: 1px solid var(--Very-light-gray);
+}
+
+
+.second .btn{
+    color: var(--Dark-cyan);
+    cursor: pointer;
+}
+.second .btn:hover{
+    color: var(--Very-light-gray);
+    background-color: transparent;
+    border: 1px solid var(--Very-light-gray);
+}
+
+
+.third .btn{
+    color: var(--Very-dark-cyan);
+    cursor: pointer;
+}
+.third .btn:hover{
+    color: var(--Very-light-gray);
+    background-color: transparent;
+    border: 1px solid var(--Very-light-gray);
+}
+
+/*********************************/
+
+.first p{
+    width: 198px;
+}
+.second p{
+    width: 210px;
+}
+.third p{
+    width: 221px;
+}
+
+
+
+}
