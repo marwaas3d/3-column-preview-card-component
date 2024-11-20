@@ -27,7 +27,7 @@ body {
 
 .container {
     width: 54rem;
-    height: 32rem;
+    height: 30rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
